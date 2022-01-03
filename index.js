@@ -20,10 +20,10 @@ cloudinary.config({
 
 const upload = multer({ dest: "uploads/" });
 app.post("/addImages", upload.array("photo"), async (req, res) => {
-  let images = [];
+  let images = {};
   for (let i = 0; i < req.files.length; i++) {
     const result = await cloudinary.uploader.upload(req.files[i].path);
-    images.push(result.url);
+    images[`${i}`] = result.url;
     await unlinkAsync(req.files[i].path);
   }
   res.status(200).send(images);
