@@ -6,7 +6,6 @@ const fs = require("fs");
 const { promisify } = require("util");
 const unlinkAsync = promisify(fs.unlink);
 const app = express();
-const jwt = require("jsonwebtoken");
 app.listen(process.env.PORT || 3200, () => {
   console.log("Server Connceted");
 });
