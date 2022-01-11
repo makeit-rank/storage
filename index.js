@@ -6,6 +6,10 @@ const fs = require("fs");
 const { promisify } = require("util");
 const unlinkAsync = promisify(fs.unlink);
 const app = express();
+var cors = require('cors')
+
+app.use(cors())
+
 app.listen(process.env.PORT || 3200, () => {
   console.log("Server Connceted");
 });
