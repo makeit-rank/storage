@@ -1,8 +1,10 @@
 <h1 align="center">Make-It  Storage</h1>
 
- 
+
 <div align="center">
-<img src="https://res.cloudinary.com/mongodbhackathon/image/upload/c_scale,h_420,w_408/v1642006726/kisspng-cloudinary-computer-software-software-as-a-service-5ae22111a4b275.5155567615247690416746_egwu14.png"/>
+ 
+ ![image 4](https://user-images.githubusercontent.com/74860406/149317658-9df2d3ea-671c-4f98-bd28-a7eab62260a0.png)
+
 <h3 >Created with Cloudinary</h3>
 </div>
 
